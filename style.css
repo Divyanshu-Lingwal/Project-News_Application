@@ -21,6 +21,7 @@ body{
     font-family: "Poopins", sans-serif;
     color: var(--primary-text-color);
     background-color: var(--card-hover-background-color);
+    transition: background 0.8s, color 0.8s;
 }
 
 p{
@@ -165,11 +166,29 @@ main{
 
 }
 
-.dark{
+.dark-theme{
     --primary-text-color: #fff;
     --secondary-text-color: #fff;
     --card-background-color:#333;
     --card-hover-background-color: #333;
     --box-shadow-color: #111;
     --box-blur: 0px;
+}
+
+.toggle-btn{
+    background: #4864ff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.toggle-btn img{
+    width: 25px;
+    margin-left: 10px;
 }
