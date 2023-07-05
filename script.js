@@ -8,6 +8,11 @@ function reload() {
     window.location.reload();
 }
 
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark");
+}
+
 async function fetchNews(query) {
     const res = await fetch(`${url}q=${query}&apiKey=${API_KEY}`)
     const data = await res.json();
